@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     font: 1em sans-serif;
-    color: white;
+    color: var(--Mcolor);
 }
 
 body{
@@ -34,23 +34,41 @@ img#photo{
     height: 80vh;
 }
 
-#MyName{
+#name{
     font: 3.5em monospace;
+    background-color: inherit;
+    border: none;
     color: var(--Mcolor);
     text-align: center;
     margin-top: 30%;
-}
 
-.flex:nth-child(2){
-    border-left: var(--Mcolor) solid 1px;
+}
+#name::placeholder{
+    color: var(--Mcolor);
+    opacity: 1;
 }
 
 #resume{
     text-align: justify;
-    font: 1em monospace;
+    font: 2em monospace;
     margin-left: 1.5em;
     margin-right: 1.5em;
     color: var(--Mcolor);
+    background-color: inherit;
+    border: none;
+    width: 50vw;
+    height: 200px;
+    resize: none;
+}
+
+#resume::placeholder{
+    opacity: 1;
+    color: var(--Mcolor);
+}
+
+
+.flex:nth-child(2){
+    border-left: var(--Mcolor) solid 1px;
 }
 
 #pjcText{
@@ -61,6 +79,7 @@ img#photo{
 }
 
 main{
+    height: 100vh;
     display: grid;
     margin: 3em;
     gap: 3em;
